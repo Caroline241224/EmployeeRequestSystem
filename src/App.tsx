@@ -34,12 +34,12 @@ function App() {
 
     try {
       
-      // EmployeeName, Type y Description (con Mayúsculas)
+      
       await createRequest({
-        EmployeeName: employeeName,
-        Type: requestType, 
-        Description: description
-      } as any) 
+        employeeName: employeeName,
+        requestType: requestType, 
+        description: description
+      })
 
       // Limpiar campos después de enviar
       setEmployeeName("")
